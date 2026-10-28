@@ -1,0 +1,40 @@
+[project]
+name = "generative-ai"
+version = "0.1.0"
+description = "Generative AI projects using LangChain, LangGraph, Gemini, Groq, and Mistral"
+readme = "README.md"
+authors = [
+    { name = "Anshaadk", email = "muhammedanshadmdi5@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "langchain>=1.0.0,<2.0.0",
+    "langgraph>=1.0.0,<2.0.0",
+    "langchain-google-genai>=4.0.0,<5.0.0",
+    "langchain-groq>=1.0.0,<2.0.0",
+    "langchain-mistralai>=1.0.0,<2.0.0",
+    "python-dotenv>=1.0.0,<2.0.0",
+    "fastapi",
+    "uvicorn",
+    "requests",
+    "langchain[huggingface]",
+    "langchain-huggingface>=1.2.3",
+    "huggingface-hub>=1.33.0",
+    "transformers>=5.21.0",
+    "sentencepiece>=0.2.2",
+    "accelerate>=1.15.0",
+    "google-search-results>=2.4.2",
+    "numexpr>=2.14.2",
+    "jinja2>=3.1.6",
+    "bitsandbytes>=0.50.2",
+    "langchain-openai",
+    "sentence-transformers>=6.2.0",
+    "streamlit>=1.66.1",
+]
+
+[project.scripts]
+generative-ai = "generative_ai:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
